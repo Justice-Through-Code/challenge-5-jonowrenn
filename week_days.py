@@ -17,9 +17,9 @@ def favorite_activities():
     # let's ask the user what their favorite thing to do is on that day of the week.
     # NOTE: Make sure to use an f-string so that the user knows which day they're being asked about.
     favorite_things = []
-    for day in days:
-        favorite_thing = input(f'What is your favorite thing to do on {day}?')
-        favorite_things.append(favorite_thing)
+    for day in range(len(days)):
+        user_favorite = input(f'What is your favorite thing to do on {day}?')
+        favorite_things.append(user_favorite)
     # We should keep track of the user's favorite things to do so that we can print them out all together.
     # 2.2 TODO: ABOVE your for loop, create a new empty list to hold the user's favorite activities.
 
@@ -75,7 +75,7 @@ def temp_by_day_continuous():
     # NOTE: remember, if you accidentally create an infinite while loop, it's ok! Go into the command line and
     # hit control + C to stop the program. No harm done to your computer (:
     temp = int(input('What is the temperature outside?'))
-    while temp >65:
+    while temp <65:
         print("Wear a sweater")
         temp = int(input('What is the temperature outside?'))
     print('Spring has sprung')
