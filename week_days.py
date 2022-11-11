@@ -10,7 +10,7 @@ def day_of_week():
     # 1.2 TODO: Write another for loop that does the same thing, but this time use the range function
     for i in range(len(days)):
         print(days[i])
-day_of_week()
+# day_of_week()
 
 def favorite_activities():
     # 2.1 TODO: Now, in a for loop, instead of just printing out the day,
@@ -36,7 +36,7 @@ def favorite_activities():
     # you need to print out.
     for i in range(len(favorite_things)):
         print(f'On {day[i]}s, your favorite activity is {favorite_things[i]}')
-favorite_activities()
+# favorite_activities()
 '''
     Take a look back at the code you just wrote. Look at how much it does!
     Often, programmers will be given large tasks, and it's our responsibility to be able to break it down into
@@ -66,7 +66,7 @@ def temp_by_day():
             print('Cozy, grab a sweater')
         else:
             print('Put on some sunscreen!')
-temp_by_day()
+# temp_by_day()
 def temp_by_day_continuous():
     # 4 TODO: Write a program that asks the user what temperature it is outside. While the temperature is below 65,
     # tell the user to wear a sweater. Once the temperature is over 65, stop looping, and tell the user that
@@ -79,4 +79,4 @@ def temp_by_day_continuous():
         print("Wear a sweater")
         temp = int(input('What is the temperature outside?'))
     print('Spring has sprung')
-temp_by_day_continuous()
+# temp_by_day_continuous()
